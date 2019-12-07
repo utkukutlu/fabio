@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="white_900">#90FFFFFF</color>
+    <color name="white_800">#80FFFFFF</color>
+    <color name="white_700">#70FFFFFF</color>
+    <color name="white_600">#60FFFFFF</color>
+    <color name="white_500">#50FFFFFF</color>
+    <color name="white_400">#40FFFFFF</color>
+    <color name="white_300">#30FFFFFF</color>
+    <color name="white_200">#20FFFFFF</color>
+
+</resources>

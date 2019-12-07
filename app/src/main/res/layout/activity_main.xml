@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DADBDB"
+        tools:context=".MainActivity">
+
+    <com.utkukutlu.library.fabio.FabioOverlayLayout
+            android:id="@+id/fabio_overlay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <com.utkukutlu.library.fabio.Fabio
+            android:id="@+id/fabio"
+            app:fbOverlayLayout="@id/fabio_overlay_layout"
+            app:fbCloseIcon="@drawable/ic_close_white_24dp"
+            app:fbOpenIcon="@drawable/ic_add_white_24dp"
+            app:fbOpenColor="@color/colorPrimary"
+            app:fbCloseColor="@color/colorAccent"
+            app:fbExpandMode="top"
+            app:fbOverlayColor="@color/white_900"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/text_view"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view"
+            android:layout_marginTop="8dp"
+            android:text="@string/github_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
